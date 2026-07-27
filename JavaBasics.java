@@ -8,9 +8,9 @@ public class JavaBasics {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner scanner = new Scanner(System.in);
 
-        int first = Integer.parseInt(scanner.nextLine());
-        double second = Double.parseDouble(scanner.nextLine());
-        String third = scanner.nextLine();
+        int first = scanner.nextInt();
+        double second = scanner.nextDouble();
+        String third = scanner.next();
         System.out.println("String: " + third);
         System.out.println("Double: " + second);
         System.out.println("Int: " + first);

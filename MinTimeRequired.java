@@ -11,9 +11,8 @@ public class MinTimeRequired {
     static long minTime(long[] machines, long goal) {
 
         float dayOutput = 0f;
-        for (int i = 0; i < machines.length; i++) {
-            dayOutput = dayOutput + (1 / (float)machines[i]);
-        }
+        for (long m : machines)
+            dayOutput = dayOutput + (1 / (float) m);
         System.out.println("Daily Output of all Machines = " + dayOutput);
         long day = 1;
         float output = 0;
